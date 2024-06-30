@@ -1,0 +1,159 @@
+Statics
+
+Population(N) : Dataset 
+Sample(n): Subset of Population
+
+Variable: Variable is a property that can take on multiple/many values.
+		 Types:
+				1.Quantative/Numerical:
+				2.Qualitative/Categorical:
+We can classify data into two main ways:
+1. Based on its type.
+1.Numerical Data:
+				It describes numbers.
+				Example: Age: The age of individuals, such as 25, 40, or 65.
+			It is divided into two subset:
+					1.Descrete: Can be counted in a finite matter such as : No of children's.
+					  Examples include the number of siblings a person has, the count of cars in a parking lot, or the number of students in a class and whole number.
+					2.Continous:Cannot be counted infinite data Such as: Size of universe Or Body Weight
+					  Examples include height, weight, temperature, or time and . 
+2.Categorical Data:
+				It describe category or groups. 
+				Example: Car Brands and Yes and No Question such as :Are you 18 Plus
+						 Marital Status: Categories like "single," "married," "divorced," or "widowed."
+2.Based on its measurement level.
+			Levels of measurement :
+				1.Quantative:
+					1. Interval : It does not have true zero.
+					2. Ration : It has a true zero.
+				2.Qualitative: 
+					1. Nominal: Numbers that cannot be ordered.
+					   Example:  gender (e.g., male, female), eye color (e.g., blue, brown, green), or country of residence (e.g., USA, Canada, UK). 
+					2. Ordinal: It can be ordered.
+					   Example:  ratings (e.g., 1 star, 2 stars, 3 stars) or educational levels.
+
+Visualization:
+		Categorical Visualization:
+							(FDT(Frequency distribution tables),Pie Chart , Pareto diagram , Bar chart)
+			1.Frequency distribution tables
+			
+		Numerical Visualization : 
+							One of the most popular graph used to represent numerical data is histogram.
+
+
+Measure of Central Tendency:
+							
+			Central Tendency:
+				Central tendency refers to measure used to determine the "Centre" of the distribution of data.
+					1.Mean(Average): Mean is a average.
+						µ(MU): Population Mean 
+							µ=(1+2+3+4)/N(Size of population data)
+							x̄(X Bar): Sample Mean
+							x̄:(1+2+3+4)/n(Size of sample data)
+					2.Median: Mid value is called median.
+						To resolve this we can follow these steps:
+							1. Sort all the elements or numbers.
+							2. Find the central element :
+								When finding central element we will find two types of size of the data.
+									1.Odd: In this case we can easily central element 
+									   Example: Suppose We have 7 elements then 4 element will be the central element.
+									2.Even: In this case we will have 2 central element 
+									   Example:In this case to find the median of this type of data we will find average of both elements and the averatge will be the mmedian.										
+					3.Mode: Most frequent element or most common element.
+			Use Case:
+				Outliers: Median
+				Categorical feature: Mode
+				
+
+Measure of Dispersion:
+			Measurement of the dispersion of a set of data points around its mean value.
+			
+			Variance:
+				Population Variance(σ**2): σ**2=(Xi-µ)**2/N
+				Sample Variance(s**2): s**2=(Xi-x̄)**2/n-1					Note:(N-1) is called Bessel's correction or Degree of freedom.
+			Standard Deviation:
+				Population Standard Deviation: 
+					Root of Population Variance
+				Sample Standard Deviation:
+					Root of Sample Variance
+		Covariance:
+			It is helping us to quantify the relationship between random variable in a particular dataset.
+			Covariance is a measure of the joint variability of two variables.
+			A positive covariance means that the two variables move together.
+			➢ A covariance of 0 means that the two variables are independent.
+			➢ A negative covariance means that the two variables move in opposite directions.
+			➢ Covariance can take on values from -∞ to +∞ . This is a problem as it is very hard to put such numbers into perspective.
+
+Percentiles And Quartiles:
+		A percentile is a value below which a certain percentage of observation lie.
+		A Quartile(Q) is Quant.
+		Quartiles(Q)=(Percentile/100)*n+1=Index(This formulae will give the index value of the Q)
+		25% 	1 Quartile
+		75%		3 Quartile
+		IQR : Q3-Q1
+To Find the outlier:
+	IQR:
+		1.Sort the Data
+		2.Calculate Q1(25%) and Q3(75%)
+		3.IQR(Q3-Q1) 
+		4.Find the lower fence
+		5.Find the higher fence
+	Five number summary and box Plot:
+		1: Minimum
+		2: First Quartile
+		3: Median
+		4: Third Quartile
+		5: Maximum
+	Lower Fence:Q1-1.5(IQR)
+	Higher Fence:Q3+1.5(IQR)
+	Note: The value which lie the outside of the lower fence and higher fence value that is outlier.
+	Outliers: A value different from entire distribution.
+{
+Normal Distribution: It follows the bell curve
+Gaussian Distribution:
+The Normal distribution is also known as Gaussian
+distribution or the Bell curve. It is one of the most
+common distributions due to the following reasons:
+• It approximates a wide variety of random variables
+• Distributions of sample means with large enough
+samples sizes could be approximated to normal
+• All computable statistics are elegant
+• Heavily used in regression analysis
+• Good track record
+Examples:
+• Biology. Most biological measures are normally
+distributed, such as: height; length of arms, legs,
+nails; blood pressure; thickness of tree barks, etc.
+• IQ tests
+• Stock market information
+}
+Central Limit Theorem: The central limit theorem states that whenever a random sample of size n is taken from any distribution with mean and variance, then the sample mean will be approximately a normal distribution with mean and variance. The larger the value of the sample size, the better the approximation of the normal.
+		It states that no matter the underlying distribution of the
+		dataset, the sampling distribution of the means would approximate a normal distribution. Moreover, the mean of the sampling
+		distribution would be equal to the mean of the original distribution and the variance would be n times smaller, where n is the size of the
+		samples. The CLT applies whenever we have a sum or an average of many variables (e.g. sum of rolled numbers when rolling dice).
+Log Normal Distribution: The log-normal distribution is a right skewed continuous probability distribution, meaning it has a long tail towards the right. It is used for modelling various natural phenomena such as income distributions, the length of chess games or the time to repair a maintainable system and more.
+
+Power Law Distribution: An example power-law graph that demonstrates ranking of popularity. To the right is the long tail, and to the left are the few that dominate (also known as the 80–20 rule).
+						We Can also convert power law distribution to normal distribution by using Box Cox Transformation.
+
+Pareto Distribution: It is example of power law distribution and this distribution is Non-Gaussian Distribution.
+
+Hypothesis Testing: Hypothesis Testing is a type of statistical analysis in which you put your assumptions about a population parameter to the test. It is used to estimate the relationship between 2 statistical variables
+
+Null hypothesis (H0):
+				The null hypothesis is the hypothesis to be tested.
+				It is the status-quo. Everything which was believed until now
+				that we are contesting with our test.
+				The concept of the null is similar to: innocent until proven
+				guilty. We assume innocence until we have enough evidence
+				to prove that a suspect is guilty.
+Alternative hypothesis (H1 or HA):
+				The alternative hypothesis is the change or innovation that is
+				contesting the status-quo.
+				Usually the alternative is our own opinion. The idea is the
+				following:
+				If the null is the status-quo (i.e., what is generally believed),
+				then the act of performing a test, shows we have doubts
+				about the truthfulness of the null. More often than not the
+				researcher’s opinion is contained in the alternative hypothesis.
